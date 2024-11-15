@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="song-info">
+            <div class="title">
+                <div class="song-title">All The Things She Said</div>
+                <div class="artist-name">t.A.T.u.</div>
+            </div>
+            <div class="img">
+                <img src="songs-images/All The Things She Said.jpg" alt="artist img" class="artist-img">
+            </div>
+
+
+        </div>
+
+        <div class="time">
+            <div class="start">
+                0:00
+            </div>
+            <div class="end">
+                0:00
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="lineChild"></div>
+        </div>
+
+        <div class="ctrls">
+            <div class="buttons">
+                <div class="backward">
+                <i class="fa-solid fa-backward" onclick="backward()"></i>
+            </div>
+            <div class="playing">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-pause none"></i>
+            </div>
+            <div class="forward">
+                <i class="fa-solid fa-forward" onclick="forward()"></i>
+            </div>
+            </div>
+            
+            <div class="repeate">
+                <i class="fa-solid fa-rotate-right" onclick="repeate()"></i>
+            </div>
+        </div>
+
+        <audio src="" class="song"></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
